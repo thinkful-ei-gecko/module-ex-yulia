@@ -13,7 +13,7 @@ const store = (function() {
   
   //finds a shopping item by id
   const findById = function(id) {
-    this.items.find(element => element.id === id);
+    return this.items.find(function(element) { return element.id === id });
   };
   
   const addItem = function(name) {
